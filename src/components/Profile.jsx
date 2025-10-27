@@ -5,6 +5,7 @@ import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { LuLinkedin } from "react-icons/lu";
 import { PiInstagramLogoFill } from "react-icons/pi";
+
 function Profile() {
   return (
     <div className="mx-2 p-2 bg-indigo-200 dark:bg-gray-700 rounded-2xl">
