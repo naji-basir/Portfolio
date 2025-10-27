@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { Sun, Moon, Laptop } from "lucide-react"; // npm install lucide-react
+import { MdLightMode } from "react-icons/md";
+import { HiMiniComputerDesktop } from "react-icons/hi2";
+import { RiMoonClearLine } from "react-icons/ri";
 
 export default function ThemeSwitcher() {
   const [theme, setTheme] = useState("system"); // 'light', 'dark', 'system'
@@ -55,19 +58,19 @@ export default function ThemeSwitcher() {
         className={buttonClass(theme === "system")}
         onClick={() => handleChange("system")}
       >
-        <Laptop size={20} />
+        <HiMiniComputerDesktop size={20} />
       </button>
       <button
         className={buttonClass(theme === "light")}
         onClick={() => handleChange("light")}
       >
-        <Sun size={20} />
+        <MdLightMode size={20} />
       </button>
       <button
         className={buttonClass(theme === "dark")}
         onClick={() => handleChange("dark")}
       >
-        <Moon size={20} />
+        <RiMoonClearLine size={20} />
       </button>
     </div>
   );
