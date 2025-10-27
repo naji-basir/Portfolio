@@ -50,7 +50,7 @@ export default function ThemeSwitcher() {
     } hover:bg-gray-400 dark:hover:bg-gray-600`;
 
   return (
-    <div className="bg-blue-100 border-2 w-32 h-12 border-blue-300 dark:bg-gray-800 p-1 rounded-4xl flex gap-1 items-center justify-center mt-5">
+    <div className="bg-blue-100 border-2 w-32 h-12 border-blue-300 dark:bg-gray-800 p-1 rounded-4xl flex gap-1 items-center justify-center">
       <button
         className={buttonClass(theme === "system")}
         onClick={() => handleChange("system")}

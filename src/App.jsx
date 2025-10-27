@@ -1,4 +1,7 @@
-import ThemeSwitcher from "./ThemeSwitcher";
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
+import Social from "./components/Social";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function App() {
   return (
@@ -9,9 +12,10 @@ export default function App() {
         color: "var(--text-color, black)",
       }}
     >
-      <div className="col-span-1 flex justify-between">
-        <ThemeSwitcher />
-        <h1>about me</h1>
+      <div className="col-span-1 flex flex-col">
+        <Navbar />
+        <Profile />
+        <Social />
       </div>
       <div className="col-span-3">
         <h1 className="text-3xl font-bold mb-5 text-center">
