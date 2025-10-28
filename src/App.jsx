@@ -1,6 +1,6 @@
+import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
-import Social from "./components/Social";
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
       <div className="col-span-1 flex flex-col">
         <Navbar />
         <Profile />
-        <Social />
+        <Contact />
       </div>
       <div className="col-span-3">
         <h1 className="text-3xl font-bold mb-5 text-center">

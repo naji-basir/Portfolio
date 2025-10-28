@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa6";
+import { FaFacebook, FaTelegram } from "react-icons/fa6";
 import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { LuLinkedin } from "react-icons/lu";
@@ -18,10 +18,13 @@ function Profile() {
         alt="naji"
         className="w-48 rounded-full mt-[-100px] ml-6"
       />
-      <h2 className="text-3xl mt-8 ml-4">Basir Naji</h2>
+      <h2 className="text-3xl mt-8 ml-4 text-indigo-500 font-medium">
+        Basir Naji
+      </h2>
       <h3 className="text-[16px] ml-4 mt-2 mb-1">
         Front-end Developer & UI/UX Designer
       </h3>
+
       <div className=" flex gap-5 px-4 py-3">
         {/* GitHub */}
         <a
@@ -40,7 +43,7 @@ function Profile() {
         <a
           href="https://www.linkedin.com/in/basir-naji-is"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer" // for secutity
           title="LinkedIn"
         >
           <LuLinkedin
@@ -58,7 +61,7 @@ function Profile() {
         >
           <PiInstagramLogoFill
             size={25}
-            className="hover:text-red-500 transition-transform duration-300 hover:scale-110"
+            className="hover:text-orange-500 transition-transform duration-300 hover:scale-110"
           />
         </a>
 
@@ -74,7 +77,18 @@ function Profile() {
             className="hover:text-sky-500 transition-transform duration-300 hover:scale-110"
           />
         </a>
-
+        {/* facebook */}
+        <a
+          href="https://www.facebook.com/naji.basir.mb"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Facebook"
+        >
+          <FaFacebook
+            size={25}
+            className="hover:text-teal-500 transition-transform duration-300 hover:scale-110"
+          />
+        </a>
         {/* Telegram */}
         <a
           href="https://t.me/naji_basir"
@@ -100,8 +114,6 @@ function Profile() {
             className="hover:text-green-500 transition-transform duration-300 hover:scale-110"
           />
         </a>
-
-        <img src="io/IoLogoWhatsapp" alt="" />
       </div>
     </div>
   );
