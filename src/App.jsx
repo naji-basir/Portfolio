@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Social from "./components/Social";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function App() {
   return (

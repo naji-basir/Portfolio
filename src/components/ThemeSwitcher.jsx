@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Sun, Moon, Laptop } from "lucide-react"; // npm install lucide-react
 import { MdLightMode } from "react-icons/md";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
 import { RiMoonClearLine } from "react-icons/ri";

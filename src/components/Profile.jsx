@@ -1,5 +1,4 @@
-import { Github, Instagram, Linkedin, MapPin, Twitter } from "lucide-react";
-import { FaGithub, FaTelegramPlane } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
 import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io5";
