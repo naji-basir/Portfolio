@@ -17,9 +17,7 @@ export default function App() {
         <Contact />
       </div>
       <div className="col-span-3">
-        <h1 className="text-3xl font-bold mb-5 text-center">
-          React + Tailwind Dark Mode
-        </h1>
+        <h1 className="text-3xl font-bold mb-5 text-center"></h1>
       </div>
     </div>
   );
