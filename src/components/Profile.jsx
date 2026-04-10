@@ -4,17 +4,15 @@ import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { LuLinkedin } from "react-icons/lu";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import profile from "../images/profile.jpg";
+import bg from "../images/bg.jpg";
 
 function Profile() {
   return (
     <div className="mx-2 p-2 bg-indigo-200 dark:bg-gray-700 rounded-2xl">
+      <img src={bg} alt="backgound" className=" rounded-xl" />
       <img
-        src="src\images\pexels-therato-1933239.jpg"
-        alt="backgound"
-        className=" rounded-xl"
-      />
-      <img
-        src="src\images\1761549188722.jpg"
+        src={profile}
         alt="naji"
         className="w-48 rounded-full mt-[-100px] ml-6"
       />
