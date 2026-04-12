@@ -12,7 +12,7 @@ export default function ThemeSwitcher() {
 
     if (mode === "system") {
       const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
+        "(prefers-color-scheme: dark)",
       ).matches;
       root.classList.toggle("dark", prefersDark);
     } else {
@@ -48,11 +48,11 @@ export default function ThemeSwitcher() {
 
   const buttonClass = (active) =>
     `p-2 rounded transition-colors duration-200 rounded-full ${
-      active ? "bg-gray-400 dark:bg-gray-700" : "bg-gray-100 dark:bg-gray-800"
-    } hover:bg-gray-400 dark:hover:bg-gray-600`;
+      active ? "bg-indigo-500 text-white" : ""
+    } hover:bg-indigo-400`;
 
   return (
-    <div className="bg-blue-100 border-2 w-32 h-12 border-blue-300 dark:bg-gray-800 p-1 rounded-4xl flex gap-1 items-center justify-center">
+    <div className="scale-80 bg-transparent border-2 w-32 h-12 border-gray-700/50 dark:border-gray-400 dark:bg-transparent p-1 rounded-4xl flex gap-1 items-center justify-center">
       <button
         className={buttonClass(theme === "system")}
         onClick={() => handleChange("system")}
