@@ -21,7 +21,7 @@ function Contact() {
   };
 
   return (
-    <div className="mx-2 mt-2 pl-6 py-3 pr-1 bg-indigo-200 dark:bg-gray-700 rounded-2xl">
+    <div className="pl-6 pr-1 bg-indigo-200 dark:bg-gray-700 rounded-2xl">
       <h2 className="text-2xl mt-2 font-medium text-indigo-500">Contact Me</h2>
 
       <div className="py-4 space-y-3">

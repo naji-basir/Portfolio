@@ -16,7 +16,7 @@ export default function App() {
       }}
     >
       {/* Left sidebar – fixed height on desktop, auto on mobile */}
-      <div className="col-span-1 flex flex-col m-2 gap-2">
+      <div className="col-span-1 flex flex-col gap-2 m-1">
         <Navbar />
         <Profile />
         <Contact />
