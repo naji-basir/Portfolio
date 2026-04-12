@@ -9,21 +9,21 @@ import bg from "../images/bg.jpg";
 
 function Profile() {
   return (
-    <div className="mx-2 p-2 bg-indigo-200 dark:bg-gray-700 rounded-2xl">
+    <div className="p-2 bg-indigo-200 dark:bg-gray-700 rounded-2xl">
       <img src={bg} alt="backgound" className=" rounded-xl" />
       <img
         src={profile}
         alt="naji"
-        className="w-48 rounded-full mt-[-100px] ml-6"
+        className="w-60 sm:w-60 md:w-36 md:mt-[-80px] lg:w-36 xl:w-48 rounded-full mt-[-100px] ml-6"
       />
       <h2 className="text-3xl mt-8 ml-4 text-indigo-500 font-medium">
         Basir Naji
       </h2>
       <h3 className="text-[16px] ml-4 mt-2 mb-1">
-        Front-end Developer & UI/UX Designer
+        Full-stack Developer & UI/UX Designer
       </h3>
 
-      <div className=" flex gap-5 px-4 py-3">
+      <div className=" flex gap-3 xl:gap-3.5 px-4 py-3">
         {/* GitHub */}
         <a
           href="https://github.com/naji-basir"
@@ -51,7 +51,7 @@ function Profile() {
         </a>
 
         {/* Instagram */}
-        <a
+        {/* <a
           href="https://instagram.com/mb_bas_ir"
           target="_blank"
           rel="noopener noreferrer"
@@ -61,7 +61,7 @@ function Profile() {
             size={25}
             className="hover:text-orange-500 transition-transform duration-300 hover:scale-110"
           />
-        </a>
+        </a> */}
 
         {/* X (Twitter) */}
         <a
@@ -76,7 +76,7 @@ function Profile() {
           />
         </a>
         {/* facebook */}
-        <a
+        {/* <a
           href="https://www.facebook.com/naji.basir.mb"
           target="_blank"
           rel="noopener noreferrer"
@@ -86,9 +86,9 @@ function Profile() {
             size={25}
             className="hover:text-teal-500 transition-transform duration-300 hover:scale-110"
           />
-        </a>
+        </a> */}
         {/* Telegram */}
-        <a
+        {/* <a
           href="https://t.me/naji_basir"
           target="_blank"
           rel="noopener noreferrer"
@@ -98,7 +98,7 @@ function Profile() {
             size={25}
             className="hover:text-blue-500 transition-transform duration-300 hover:scale-110"
           />
-        </a>
+        </a> */}
 
         {/* WhatsApp */}
         <a
