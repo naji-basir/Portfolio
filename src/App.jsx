@@ -1,23 +1,33 @@
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
+import Projects from "./components/Projects";
+import Experience from "./components/Expreience";
+import ContactMe from "./components/ContactMe";
+import Skills from "./components/Skills";
 
 export default function App() {
   return (
     <div
-      className="grid grid-cols-4 min-h-screen transition-colors duration-300"
+      className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 min-h-screen md:h-screen transition-colors duration-300 md:overflow-hidden"
       style={{
         backgroundColor: "var(--bg-color, white)",
         color: "var(--text-color, black)",
       }}
     >
-      <div className="col-span-1 flex flex-col">
+      {/* Left sidebar – fixed height on desktop, auto on mobile */}
+      <div className="col-span-1 flex flex-col m-2 gap-2">
         <Navbar />
         <Profile />
         <Contact />
       </div>
-      <div className="col-span-3">
-        <h1 className="text-3xl font-bold mb-5 text-center"></h1>
+
+      {/* Right content – scrollable on desktop, flows on mobile */}
+      <div className="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col gap-2 my-2.5 pr-2 md:overflow-y-auto m-1">
+        <Experience />
+        <Skills />
+        <Projects />
+        <ContactMe />
       </div>
     </div>
   );
