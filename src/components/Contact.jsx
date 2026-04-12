@@ -21,7 +21,7 @@ function Contact() {
   };
 
   return (
-    <div className="mx-2 mt-2 pl-6 py-3 pr-1 bg-indigo-200 dark:bg-gray-700 rounded-2xl">
+    <div className="pl-5 py-3 pr-1 bg-indigo-200 dark:bg-gray-700 rounded-2xl">
       <h2 className="text-2xl mt-2 font-medium text-indigo-500">Contact Me</h2>
 
       <div className="py-4 space-y-3">
@@ -41,10 +41,10 @@ function Contact() {
           }}
         >
           <IoMailUnread size={24} />
-          <div className="flex gap-2">
+          <div className="flex gap-2 overflow-hidden  ">
             <a
               href={`mailto:${email}`}
-              className="cursor-pointer hover:text-blue-500 transition-colors"
+              className="cursor-pointer hover:text-blue-500 transition-colors overflow-hidden"
               target="_blank"
               rel="noopener noreferrer"
             >
