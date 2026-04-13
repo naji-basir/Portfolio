@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoChevronUpOutline } from "react-icons/io5";
+import data from "../../data/data";
 
 function Projects() {
   const [showModel, setShowModel] = useState(true);
@@ -19,7 +20,21 @@ function Projects() {
       {showModel && (
         <div>
           <div className="w-full h-0.5 bg-indigo-300 dark:bg-slate-500"></div>
-          <div className="flex p-4"></div>
+          {/* <div className="flex "></div> */}
+          <div className="grid grid-cols-2 lg:grid-cols-3 p-4 gap-x-4 gap-y-4">
+            {data.map((d, index) => (
+              <div key={index} className="h-35 rounded-xl flex flex-col gap-1">
+                <h1 className="self-start bg-primary text-white dark:text-black px-4 rounded-2xl rounded-bl-none">
+                  {d.name}
+                </h1>
+                <div className="bg-slate-500 h-full w-full rounded-2xl rounded-tl-none flex flex-col">
+                  <div className="self-start size-6 rounded-full bg-primary text-white dark:text-black m-1">
+                    {index + 1}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>
