@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoChevronUpOutline } from "react-icons/io5";
-import data from "../../data/data";
+import data from "../../data/projectData";
 
 function Projects() {
   const [showModel, setShowModel] = useState(true);
