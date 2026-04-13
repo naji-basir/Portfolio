@@ -9,11 +9,17 @@ body {
 :root {
   --bg-color: white;
   --text-color: black;
+  --color-secondry: #5cad75;
+  --color-blueColor: #1e88e5;
+  --color-purpleColor: #94aed1;
 }
 
 .dark {
   --bg-color: #111827;
   --text-color: #f3f4f6;
+}
+@theme {
+  --color-primary: oklch(58.5% 0.233 277.117);
 }
 
 /* Respect system preference for system mode */
