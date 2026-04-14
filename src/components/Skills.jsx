@@ -1,28 +1,26 @@
 import { useState } from "react";
 
-import { BsCss, BsFiletypeJs } from "react-icons/bs";
-
-import { DiJava, DiPython, DiReact } from "react-icons/di";
-
-import {
-  FaDocker,
-  FaFigma,
-  FaHtml5,
-  FaNodeJs,
-  FaSquareGit,
-} from "react-icons/fa6";
-
-import { GrGithub, GrMysql } from "react-icons/gr";
+import { FaJava } from "react-icons/fa6";
 
 import { IoChevronUpOutline } from "react-icons/io5";
 
-import { RiTailwindCssFill } from "react-icons/ri";
-
 import {
+  SiCss,
+  SiDocker,
   SiExpress,
+  SiFigma,
+  SiGit,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
   SiMongodb,
+  SiMysql,
   SiNextdotjs,
+  SiNodedotjs,
   SiPostgresql,
+  SiPython,
+  SiReact,
+  SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
 
@@ -48,34 +46,34 @@ function Skills() {
 
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-x-4 gap-y-10">
             <SkillsItem title="Languages">
-              <DiJava size={48} className="text-red-400" />
+              <FaJava size={48} className="text-red-400" />
               <SiTypescript size={40} className="text-blue-400" />
-              <BsFiletypeJs size={40} className="text-yellow-400" />
-              <DiPython size={48} className="text-emerald-500" />
+              <SiJavascript size={40} className="text-yellow-400" />
+              <SiPython size={40} className="text-emerald-500" />
             </SkillsItem>
 
             <SkillsItem title="Frontend">
-              <FaHtml5 size={40} className="text-red-400" />
-              <BsCss size={40} className="text-blue-400" />
-              <BsFiletypeJs size={40} className="text-yellow-400" />
-              <DiReact size={48} className="text-blue-500" />
+              <SiHtml5 size={40} className="text-red-400" />
+              <SiCss size={40} className="text-blue-400" />
+              <SiJavascript size={40} className="text-yellow-400" />
+              <SiReact size={40} className="text-blue-500" />
               <SiNextdotjs size={40} className="text-black" />
-              <RiTailwindCssFill size={40} className="text-sky-400" />
+              <SiTailwindcss size={40} className="text-sky-400" />
             </SkillsItem>
 
             <SkillsItem title="Backend">
-              <FaNodeJs size={40} className="text-red-400" />
+              <SiNodedotjs size={40} className="text-red-400" />
               <SiExpress size={40} className="text-blue-400" />
               <SiMongodb size={40} className="text-emerald-500" />
-              <GrMysql size={40} className="text-blue-500" />
+              <SiMysql size={40} className="text-blue-500" />
               <SiPostgresql size={40} className="text-blue-500" />
             </SkillsItem>
 
             <SkillsItem title="Tools">
-              <GrGithub size={40} className="text-indigo-400" />
-              <FaFigma size={40} className="text-pink-400" />
-              <FaDocker size={40} className="text-blue-400" />
-              <FaSquareGit size={40} className="text-rose-400" />
+              <SiGithub size={40} className="text-indigo-400" />
+              <SiFigma size={40} className="text-pink-400" />
+              <SiDocker size={40} className="text-blue-400" />
+              <SiGit size={40} className="text-rose-400" />
             </SkillsItem>
           </div>
         </div>
