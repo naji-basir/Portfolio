@@ -121,7 +121,7 @@ function Skills() {
               <GrGithub size={40} className="text-indigo-400" />
               <FaFigma size={40} className="text-pink-400" />
               <FaDocker size={40} className="text-blue-400" />
-              <FaSquareGit size={40} className="text-rose-400" />
+              {/* <FaSquareGit size={40} className="text-rose-400" /> */}
             </SkillsItem>
           </div>
         </div>
