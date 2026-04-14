@@ -46,7 +46,7 @@ function Skills() {
 
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-x-4 gap-y-10">
             <SkillsItem title="Languages">
-              <FaJava size={48} className="text-red-400" />
+              <FaJava size={40} className="text-red-400" />
               <SiTypescript size={40} className="text-blue-400" />
               <SiJavascript size={40} className="text-yellow-400" />
               <SiPython size={40} className="text-emerald-500" />
