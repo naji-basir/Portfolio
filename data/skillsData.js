@@ -1,5 +1,10 @@
-import { DiJava, DiPython, DiReact } from "react-icons/di";
-import { BsJavascript, BsCss } from "react-icons/bs";
+import {
+  DiCss3,
+  DiJava,
+  DiJavascript,
+  DiPython,
+  DiReact,
+} from "react-icons/di";
 import {
   FaHtml5,
   FaNodeJs,
@@ -23,7 +28,7 @@ const skillsData = [
     items: [
       { icon: DiJava, color: "text-red-400" },
       { icon: SiTypescript, color: "text-blue-400" },
-      { icon: BsJavascript, color: "text-yellow-400" },
+      { icon: DiJavascript, color: "text-yellow-400" },
       { icon: DiPython, color: "text-emerald-500" },
     ],
   },
@@ -31,8 +36,8 @@ const skillsData = [
     title: "Frontend",
     items: [
       { icon: FaHtml5, color: "text-red-400" },
-      { icon: BsCss, color: "text-blue-400" },
-      { icon: BsJavascript, color: "text-yellow-400" },
+      { icon: DiCss3, color: "text-blue-400" },
+      { icon: DiJavascript, color: "text-yellow-400" },
       { icon: DiReact, color: "text-blue-500" },
       { icon: SiNextdotjs, color: "text-black dark:text-white" },
       { icon: RiTailwindCssFill, color: "text-sky-400" },
